@@ -1,0 +1,11 @@
+@AUTO_GEN_MESSAGE@
+
+#ifndef ES_VERSION_H_IN
+#define ES_VERSION_H_IN
+
+#define VERSION_MAJOR @ES_MAJOR@
+#define VERSION_MINOR @ES_MINOR@
+#define VERSION_BUILD @ES_BUILD@
+
+
+#endif  // ES_VERSION_H_IN
