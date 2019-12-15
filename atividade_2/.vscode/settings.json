@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.deprecated": "c",
+        "es_button.h": "c",
+        "gpio.h": "c"
+    }
+}
