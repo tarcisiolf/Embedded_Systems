@@ -22,3 +22,4 @@
 "tinycbor":"/home/tarcisio/zephyrproject/modules/lib/tinycbor"
 "littlefs":"/home/tarcisio/zephyrproject/modules/fs/littlefs"
 "mipi-sys-t":"/home/tarcisio/zephyrproject/modules/debug/mipi-sys-t"
+"nrf_hw_models":"/home/tarcisio/zephyrproject/modules/bsim_hw_models/nrf_hw_models"

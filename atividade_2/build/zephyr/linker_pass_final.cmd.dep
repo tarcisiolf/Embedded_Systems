@@ -8,7 +8,6 @@ zephyr/linker_pass_final.cmd: \
  /home/tarcisio/zephyrproject/zephyr/include/toolchain/gcc.h \
  /home/tarcisio/zephyrproject/zephyr/include/generated_dts_board.h \
  /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/include/generated/generated_dts_board_unfixed.h \
- /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/include/generated/generated_dts_board_unfixed.h.deprecated \
  /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/include/generated/generated_dts_board_fixups.h \
  /home/tarcisio/zephyrproject/zephyr/include/linker/linker-defs.h \
  /home/tarcisio/zephyrproject/zephyr/include/sys/util.h \

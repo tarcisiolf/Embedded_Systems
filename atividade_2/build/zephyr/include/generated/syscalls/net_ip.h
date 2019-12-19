@@ -7,7 +7,7 @@
 #ifndef _ASMLANGUAGE
 
 #include <syscall_list.h>
-#include <syscall_macros.h>
+#include <syscall.h>
 
 #if __GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6)
 #pragma GCC diagnostic push

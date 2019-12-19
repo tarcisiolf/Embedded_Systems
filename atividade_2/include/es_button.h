@@ -3,7 +3,7 @@
 #define _ES_BUTTON_H_
 
 #include <device.h>
-#include <gpio.h>
+#include <drivers/gpio.h>
 #include <zephyr/types.h>
 
 typedef struct button_s es_button_t;

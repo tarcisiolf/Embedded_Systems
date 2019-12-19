@@ -18,9 +18,7 @@
 /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_linker
 /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_logging
 /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_mgmt
-/home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_misc
 /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_net
-/home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_nvs
 /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_posix
 /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_power
 /home/tarcisio/zephyrproject/zephyr/dev/atividade_2/build/zephyr/misc/generated/syscalls_links/_home_tarcisio_zephyrproject_zephyr_include_random

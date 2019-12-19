@@ -6,64 +6,64 @@
  *
  * Directories with bindings:
  *   $ZEPHYR_BASE/dts/bindings
+ *
+ * Nodes in dependency order (ordinal and path):
+ *   0   /
+ *   1   /aliases
+ *   2   /buttons
+ *   3   /soc
+ *   4   /soc/gpio@50000000
+ *   5   /buttons/button_0
+ *   6   /buttons/button_1
+ *   7   /buttons/button_2
+ *   8   /buttons/button_3
+ *   9   /chosen
+ *   10  /connector
+ *   11  /cpus
+ *   12  /cpus/cpu@0
+ *   13  /leds
+ *   14  /leds/led_0
+ *   15  /leds/led_1
+ *   16  /leds/led_2
+ *   17  /leds/led_3
+ *   18  /pwmleds
+ *   19  /soc/interrupt-controller@e000e100
+ *   20  /soc/pwm@4001c000
+ *   21  /pwmleds/pwm_led_0
+ *   22  /soc/adc@40007000
+ *   23  /soc/clock@40000000
+ *   24  /soc/flash-controller@4001e000
+ *   25  /soc/flash-controller@4001e000/flash@0
+ *   26  /soc/flash-controller@4001e000/flash@0/partitions
+ *   27  /soc/flash-controller@4001e000/flash@0/partitions/partition@0
+ *   28  /soc/flash-controller@4001e000/flash@0/partitions/partition@3e000
+ *   29  /soc/flash-controller@4001e000/flash@0/partitions/partition@70000
+ *   30  /soc/flash-controller@4001e000/flash@0/partitions/partition@7a000
+ *   31  /soc/flash-controller@4001e000/flash@0/partitions/partition@c000
+ *   32  /soc/gpiote@40006000
+ *   33  /soc/i2c@40003000
+ *   34  /soc/i2c@40004000
+ *   35  /soc/memory@20000000
+ *   36  /soc/pwm@40021000
+ *   37  /soc/pwm@40022000
+ *   38  /soc/qdec@40012000
+ *   39  /soc/rtc@4000b000
+ *   40  /soc/rtc@40011000
+ *   41  /soc/rtc@40024000
+ *   42  /soc/spi@40003000
+ *   43  /soc/spi@40004000
+ *   44  /soc/spi@40023000
+ *   45  /soc/temp@4000c000
+ *   46  /soc/timer@40008000
+ *   47  /soc/timer@40009000
+ *   48  /soc/timer@4000a000
+ *   49  /soc/timer@4001a000
+ *   50  /soc/timer@4001b000
+ *   51  /soc/timer@e000e010
+ *   52  /soc/uart@40002000
+ *   53  /soc/watchdog@40010000
+ *   54  /sw-pwm
  */
-
-/* Nodes in dependency order (ordinal : path): */
-/* 0 : / */
-/* 1 : /aliases */
-/* 2 : /buttons */
-/* 3 : /soc */
-/* 4 : /soc/gpio@50000000 */
-/* 5 : /buttons/button_0 */
-/* 6 : /buttons/button_1 */
-/* 7 : /buttons/button_2 */
-/* 8 : /buttons/button_3 */
-/* 9 : /chosen */
-/* 10 : /connector */
-/* 11 : /cpus */
-/* 12 : /cpus/cpu@0 */
-/* 13 : /leds */
-/* 14 : /leds/led_0 */
-/* 15 : /leds/led_1 */
-/* 16 : /leds/led_2 */
-/* 17 : /leds/led_3 */
-/* 18 : /pwmleds */
-/* 19 : /soc/interrupt-controller@e000e100 */
-/* 20 : /soc/pwm@4001c000 */
-/* 21 : /pwmleds/pwm_led_0 */
-/* 22 : /soc/adc@40007000 */
-/* 23 : /soc/clock@40000000 */
-/* 24 : /soc/flash-controller@4001e000 */
-/* 25 : /soc/flash-controller@4001e000/flash@0 */
-/* 26 : /soc/flash-controller@4001e000/flash@0/partitions */
-/* 27 : /soc/flash-controller@4001e000/flash@0/partitions/partition@0 */
-/* 28 : /soc/flash-controller@4001e000/flash@0/partitions/partition@3e000 */
-/* 29 : /soc/flash-controller@4001e000/flash@0/partitions/partition@70000 */
-/* 30 : /soc/flash-controller@4001e000/flash@0/partitions/partition@7a000 */
-/* 31 : /soc/flash-controller@4001e000/flash@0/partitions/partition@c000 */
-/* 32 : /soc/gpiote@40006000 */
-/* 33 : /soc/i2c@40003000 */
-/* 34 : /soc/i2c@40004000 */
-/* 35 : /soc/memory@20000000 */
-/* 36 : /soc/pwm@40021000 */
-/* 37 : /soc/pwm@40022000 */
-/* 38 : /soc/qdec@40012000 */
-/* 39 : /soc/rtc@4000b000 */
-/* 40 : /soc/rtc@40011000 */
-/* 41 : /soc/rtc@40024000 */
-/* 42 : /soc/spi@40003000 */
-/* 43 : /soc/spi@40004000 */
-/* 44 : /soc/spi@40023000 */
-/* 45 : /soc/temp@4000c000 */
-/* 46 : /soc/timer@40008000 */
-/* 47 : /soc/timer@40009000 */
-/* 48 : /soc/timer@4000a000 */
-/* 49 : /soc/timer@4001a000 */
-/* 50 : /soc/timer@4001b000 */
-/* 51 : /soc/timer@e000e010 */
-/* 52 : /soc/uart@40002000 */
-/* 53 : /soc/watchdog@40010000 */
-/* 54 : /sw-pwm */
 
 /*
  * Devicetree node:
@@ -75,32 +75,32 @@
  * Dependency Ordinal: 19
  *
  * Requires:
- *   3 /soc
+ *   3   /soc
  *
  * Supports:
- *   22 /soc/adc@40007000
- *   23 /soc/clock@40000000
- *   32 /soc/gpiote@40006000
- *   33 /soc/i2c@40003000
- *   34 /soc/i2c@40004000
- *   20 /soc/pwm@4001c000
- *   36 /soc/pwm@40021000
- *   37 /soc/pwm@40022000
- *   38 /soc/qdec@40012000
- *   39 /soc/rtc@4000b000
- *   40 /soc/rtc@40011000
- *   41 /soc/rtc@40024000
- *   42 /soc/spi@40003000
- *   43 /soc/spi@40004000
- *   44 /soc/spi@40023000
- *   45 /soc/temp@4000c000
- *   46 /soc/timer@40008000
- *   47 /soc/timer@40009000
- *   48 /soc/timer@4000a000
- *   49 /soc/timer@4001a000
- *   50 /soc/timer@4001b000
- *   52 /soc/uart@40002000
- *   53 /soc/watchdog@40010000
+ *   22  /soc/adc@40007000
+ *   23  /soc/clock@40000000
+ *   32  /soc/gpiote@40006000
+ *   33  /soc/i2c@40003000
+ *   34  /soc/i2c@40004000
+ *   20  /soc/pwm@4001c000
+ *   36  /soc/pwm@40021000
+ *   37  /soc/pwm@40022000
+ *   38  /soc/qdec@40012000
+ *   39  /soc/rtc@4000b000
+ *   40  /soc/rtc@40011000
+ *   41  /soc/rtc@40024000
+ *   42  /soc/spi@40003000
+ *   43  /soc/spi@40004000
+ *   44  /soc/spi@40023000
+ *   45  /soc/temp@4000c000
+ *   46  /soc/timer@40008000
+ *   47  /soc/timer@40009000
+ *   48  /soc/timer@4000a000
+ *   49  /soc/timer@4001a000
+ *   50  /soc/timer@4001b000
+ *   52  /soc/uart@40002000
+ *   53  /soc/watchdog@40010000
  *
  * Description:
  *   This binding describes the ARMv7-M Nested Vectored Interrupt Controller.
@@ -124,10 +124,10 @@
  * Dependency Ordinal: 24
  *
  * Requires:
- *   3 /soc
+ *   3   /soc
  *
  * Supports:
- *   25 /soc/flash-controller@4001e000/flash@0
+ *   25  /soc/flash-controller@4001e000/flash@0
  *
  * Description:
  *   This binding gives a base representation of the Nordic NVMC
@@ -151,10 +151,10 @@
  * Dependency Ordinal: 25
  *
  * Requires:
- *   24 /soc/flash-controller@4001e000
+ *   24  /soc/flash-controller@4001e000
  *
  * Supports:
- *   26 /soc/flash-controller@4001e000/flash@0/partitions
+ *   26  /soc/flash-controller@4001e000/flash@0/partitions
  *
  * Description:
  *   This binding gives a base FLASH description
@@ -184,7 +184,7 @@
  * Dependency Ordinal: 35
  *
  * Requires:
- *   3 /soc
+ *   3   /soc
  *
  * Description:
  *   This binding gives a generic on-chip SRAM description
@@ -205,8 +205,8 @@
  * Dependency Ordinal: 22
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the nRF SAADC node
@@ -244,8 +244,8 @@
  * Dependency Ordinal: 23
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF clock control node
@@ -273,8 +273,8 @@
  * Dependency Ordinal: 52
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This binding gives a base representation of the Nordic UART
@@ -342,8 +342,8 @@
  * Dependency Ordinal: 32
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the NRF GPIOTE node
@@ -381,17 +381,17 @@
  * Dependency Ordinal: 4
  *
  * Requires:
- *   3 /soc
+ *   3   /soc
  *
  * Supports:
- *   5 /buttons/button_0
- *   6 /buttons/button_1
- *   7 /buttons/button_2
- *   8 /buttons/button_3
- *   14 /leds/led_0
- *   15 /leds/led_1
- *   16 /leds/led_2
- *   17 /leds/led_3
+ *   5   /buttons/button_0
+ *   6   /buttons/button_1
+ *   7   /buttons/button_2
+ *   8   /buttons/button_3
+ *   14  /leds/led_0
+ *   15  /leds/led_1
+ *   16  /leds/led_2
+ *   17  /leds/led_3
  *
  * Description:
  *   This is a representation of the NRF GPIO nodes
@@ -421,8 +421,8 @@
  * Dependency Ordinal: 33
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   Nordic nRF family TWI (TWI master)
@@ -475,11 +475,11 @@
  * Dependency Ordinal: 20
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Supports:
- *   21 /pwmleds/pwm_led_0
+ *   21  /pwmleds/pwm_led_0
  *
  * Description:
  *   This binding gives a base representation of the nRF PWM
@@ -547,8 +547,8 @@
  * Dependency Ordinal: 43
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   Nordic nRF family SPI (SPI master)
@@ -569,6 +569,16 @@
 #define DT_ALIAS_SPI_1_IRQ_0_PRIORITY               DT_NORDIC_NRF_SPI_40004000_IRQ_0_PRIORITY
 #define DT_NORDIC_NRF_SPI_SPI_1_IRQ_0_PRIORITY      DT_NORDIC_NRF_SPI_40004000_IRQ_0_PRIORITY
 #define DT_INST_0_NORDIC_NRF_SPI_IRQ_0_PRIORITY     DT_NORDIC_NRF_SPI_40004000_IRQ_0_PRIORITY
+/* Enable pull-up on MISO line */
+#define DT_NORDIC_NRF_SPI_40004000_MISO_PULL_UP     0
+#define DT_ALIAS_SPI_1_MISO_PULL_UP                 DT_NORDIC_NRF_SPI_40004000_MISO_PULL_UP
+#define DT_NORDIC_NRF_SPI_SPI_1_MISO_PULL_UP        DT_NORDIC_NRF_SPI_40004000_MISO_PULL_UP
+#define DT_INST_0_NORDIC_NRF_SPI_MISO_PULL_UP       DT_NORDIC_NRF_SPI_40004000_MISO_PULL_UP
+/* Enable pull-down on MISO line */
+#define DT_NORDIC_NRF_SPI_40004000_MISO_PULL_DOWN   0
+#define DT_ALIAS_SPI_1_MISO_PULL_DOWN               DT_NORDIC_NRF_SPI_40004000_MISO_PULL_DOWN
+#define DT_NORDIC_NRF_SPI_SPI_1_MISO_PULL_DOWN      DT_NORDIC_NRF_SPI_40004000_MISO_PULL_DOWN
+#define DT_INST_0_NORDIC_NRF_SPI_MISO_PULL_DOWN     DT_NORDIC_NRF_SPI_40004000_MISO_PULL_DOWN
 /* SCK pin */
 #define DT_NORDIC_NRF_SPI_40004000_SCK_PIN          31
 #define DT_ALIAS_SPI_1_SCK_PIN                      DT_NORDIC_NRF_SPI_40004000_SCK_PIN
@@ -601,8 +611,8 @@
  * Dependency Ordinal: 44
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   Nordic nRF family SPI (SPI master)
@@ -623,6 +633,16 @@
 #define DT_ALIAS_SPI_2_IRQ_0_PRIORITY               DT_NORDIC_NRF_SPI_40023000_IRQ_0_PRIORITY
 #define DT_NORDIC_NRF_SPI_SPI_2_IRQ_0_PRIORITY      DT_NORDIC_NRF_SPI_40023000_IRQ_0_PRIORITY
 #define DT_INST_1_NORDIC_NRF_SPI_IRQ_0_PRIORITY     DT_NORDIC_NRF_SPI_40023000_IRQ_0_PRIORITY
+/* Enable pull-up on MISO line */
+#define DT_NORDIC_NRF_SPI_40023000_MISO_PULL_UP     0
+#define DT_ALIAS_SPI_2_MISO_PULL_UP                 DT_NORDIC_NRF_SPI_40023000_MISO_PULL_UP
+#define DT_NORDIC_NRF_SPI_SPI_2_MISO_PULL_UP        DT_NORDIC_NRF_SPI_40023000_MISO_PULL_UP
+#define DT_INST_1_NORDIC_NRF_SPI_MISO_PULL_UP       DT_NORDIC_NRF_SPI_40023000_MISO_PULL_UP
+/* Enable pull-down on MISO line */
+#define DT_NORDIC_NRF_SPI_40023000_MISO_PULL_DOWN   0
+#define DT_ALIAS_SPI_2_MISO_PULL_DOWN               DT_NORDIC_NRF_SPI_40023000_MISO_PULL_DOWN
+#define DT_NORDIC_NRF_SPI_SPI_2_MISO_PULL_DOWN      DT_NORDIC_NRF_SPI_40023000_MISO_PULL_DOWN
+#define DT_INST_1_NORDIC_NRF_SPI_MISO_PULL_DOWN     DT_NORDIC_NRF_SPI_40023000_MISO_PULL_DOWN
 /* SCK pin */
 #define DT_NORDIC_NRF_SPI_40023000_SCK_PIN          25
 #define DT_ALIAS_SPI_2_SCK_PIN                      DT_NORDIC_NRF_SPI_40023000_SCK_PIN
@@ -655,8 +675,8 @@
  * Dependency Ordinal: 39
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF RTC node
@@ -714,8 +734,8 @@
  * Dependency Ordinal: 40
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF RTC node
@@ -773,8 +793,8 @@
  * Dependency Ordinal: 41
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF RTC node
@@ -832,8 +852,8 @@
  * Dependency Ordinal: 46
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF timer node
@@ -876,8 +896,8 @@
  * Dependency Ordinal: 47
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF timer node
@@ -920,8 +940,8 @@
  * Dependency Ordinal: 48
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF timer node
@@ -964,8 +984,8 @@
  * Dependency Ordinal: 49
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF timer node
@@ -1008,8 +1028,8 @@
  * Dependency Ordinal: 50
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF timer node
@@ -1052,8 +1072,8 @@
  * Dependency Ordinal: 45
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the Nordic nRF TEMP node
@@ -1081,8 +1101,8 @@
  * Dependency Ordinal: 53
  *
  * Requires:
- *   3 /soc
- *   19 /soc/interrupt-controller@e000e100
+ *   3   /soc
+ *   19  /soc/interrupt-controller@e000e100
  *
  * Description:
  *   This is a representation of the NRF watchdog
@@ -1120,7 +1140,7 @@
  * Dependency Ordinal: 12
  *
  * Requires:
- *   11 /cpus
+ *   11  /cpus
  *
  * Description:
  *   This binding gives a base representation for ARM Cortex-M4F CPU.
@@ -1139,13 +1159,13 @@
  * Dependency Ordinal: 13
  *
  * Requires:
- *   0 /
+ *   0   /
  *
  * Supports:
- *   14 /leds/led_0
- *   15 /leds/led_1
- *   16 /leds/led_2
- *   17 /leds/led_3
+ *   14  /leds/led_0
+ *   15  /leds/led_1
+ *   16  /leds/led_2
+ *   17  /leds/led_3
  *
  * Description:
  *   GPIO LEDs parent node
@@ -1162,8 +1182,8 @@
  * Dependency Ordinal: 14
  *
  * Requires:
- *   13 /leds
- *   4 /soc/gpio@50000000
+ *   13  /leds
+ *   4   /soc/gpio@50000000
  *
  * Description:
  *   GPIO LED child node
@@ -1195,8 +1215,8 @@
  * Dependency Ordinal: 15
  *
  * Requires:
- *   13 /leds
- *   4 /soc/gpio@50000000
+ *   13  /leds
+ *   4   /soc/gpio@50000000
  *
  * Description:
  *   GPIO LED child node
@@ -1228,8 +1248,8 @@
  * Dependency Ordinal: 16
  *
  * Requires:
- *   13 /leds
- *   4 /soc/gpio@50000000
+ *   13  /leds
+ *   4   /soc/gpio@50000000
  *
  * Description:
  *   GPIO LED child node
@@ -1261,8 +1281,8 @@
  * Dependency Ordinal: 17
  *
  * Requires:
- *   13 /leds
- *   4 /soc/gpio@50000000
+ *   13  /leds
+ *   4   /soc/gpio@50000000
  *
  * Description:
  *   GPIO LED child node
@@ -1294,10 +1314,10 @@
  * Dependency Ordinal: 18
  *
  * Requires:
- *   0 /
+ *   0   /
  *
  * Supports:
- *   21 /pwmleds/pwm_led_0
+ *   21  /pwmleds/pwm_led_0
  *
  * Description:
  *   PWM LEDs parent node
@@ -1314,8 +1334,8 @@
  * Dependency Ordinal: 21
  *
  * Requires:
- *   18 /pwmleds
- *   20 /soc/pwm@4001c000
+ *   18  /pwmleds
+ *   20  /soc/pwm@4001c000
  *
  * Description:
  *   PWM LED child node
@@ -1340,13 +1360,13 @@
  * Dependency Ordinal: 2
  *
  * Requires:
- *   0 /
+ *   0   /
  *
  * Supports:
- *   5 /buttons/button_0
- *   6 /buttons/button_1
- *   7 /buttons/button_2
- *   8 /buttons/button_3
+ *   5   /buttons/button_0
+ *   6   /buttons/button_1
+ *   7   /buttons/button_2
+ *   8   /buttons/button_3
  *
  * Description:
  *   GPIO KEYS parent node
@@ -1363,8 +1383,8 @@
  * Dependency Ordinal: 5
  *
  * Requires:
- *   2 /buttons
- *   4 /soc/gpio@50000000
+ *   2   /buttons
+ *   4   /soc/gpio@50000000
  *
  * Description:
  *   GPIO KEYS child node
@@ -1396,8 +1416,8 @@
  * Dependency Ordinal: 6
  *
  * Requires:
- *   2 /buttons
- *   4 /soc/gpio@50000000
+ *   2   /buttons
+ *   4   /soc/gpio@50000000
  *
  * Description:
  *   GPIO KEYS child node
@@ -1429,8 +1449,8 @@
  * Dependency Ordinal: 7
  *
  * Requires:
- *   2 /buttons
- *   4 /soc/gpio@50000000
+ *   2   /buttons
+ *   4   /soc/gpio@50000000
  *
  * Description:
  *   GPIO KEYS child node
@@ -1462,8 +1482,8 @@
  * Dependency Ordinal: 8
  *
  * Requires:
- *   2 /buttons
- *   4 /soc/gpio@50000000
+ *   2   /buttons
+ *   4   /soc/gpio@50000000
  *
  * Description:
  *   GPIO KEYS child node
@@ -1495,7 +1515,7 @@
  * Dependency Ordinal: 10
  *
  * Requires:
- *   0 /
+ *   0   /
  *
  * Description:
  *   GPIO pins exposed on Arduino Uno (R3) headers.

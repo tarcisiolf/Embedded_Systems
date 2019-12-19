@@ -83,6 +83,7 @@
 /home/tarcisio/zephyrproject/zephyr/drivers/dma/Kconfig.sam_xdmac
 /home/tarcisio/zephyrproject/zephyr/drivers/dma/Kconfig.stm32
 /home/tarcisio/zephyrproject/zephyr/drivers/eeprom/Kconfig
+/home/tarcisio/zephyrproject/zephyr/drivers/eeprom/Kconfig.stm32
 /home/tarcisio/zephyrproject/zephyr/drivers/entropy/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/entropy/Kconfig.cc13xx_cc26xx
 /home/tarcisio/zephyrproject/zephyr/drivers/entropy/Kconfig.esp32
@@ -108,7 +109,6 @@
 /home/tarcisio/zephyrproject/zephyr/drivers/flash/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/flash/Kconfig.gecko
 /home/tarcisio/zephyrproject/zephyr/drivers/flash/Kconfig.mcux
-/home/tarcisio/zephyrproject/zephyr/drivers/flash/Kconfig.native_posix
 /home/tarcisio/zephyrproject/zephyr/drivers/flash/Kconfig.nios2_qspi
 /home/tarcisio/zephyrproject/zephyr/drivers/flash/Kconfig.nor
 /home/tarcisio/zephyrproject/zephyr/drivers/flash/Kconfig.nrf
@@ -168,6 +168,7 @@
 /home/tarcisio/zephyrproject/zephyr/drivers/ieee802154/Kconfig.kw41z
 /home/tarcisio/zephyrproject/zephyr/drivers/ieee802154/Kconfig.mcr20a
 /home/tarcisio/zephyrproject/zephyr/drivers/ieee802154/Kconfig.nrf5
+/home/tarcisio/zephyrproject/zephyr/drivers/ieee802154/Kconfig.rf2xx
 /home/tarcisio/zephyrproject/zephyr/drivers/interrupt_controller/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/interrupt_controller/Kconfig.multilevel
 /home/tarcisio/zephyrproject/zephyr/drivers/interrupt_controller/Kconfig.multilevel.aggregator_template
@@ -272,6 +273,7 @@
 /home/tarcisio/zephyrproject/zephyr/drivers/sensor/max44009/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/sensor/mcp9808/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/sensor/mpu6050/Kconfig
+/home/tarcisio/zephyrproject/zephyr/drivers/sensor/ms5607/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/sensor/ms5837/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/sensor/nrf5/Kconfig
 /home/tarcisio/zephyrproject/zephyr/drivers/sensor/opt3001/Kconfig
@@ -299,7 +301,7 @@
 /home/tarcisio/zephyrproject/zephyr/drivers/serial/Kconfig.leuart_gecko
 /home/tarcisio/zephyrproject/zephyr/drivers/serial/Kconfig.litex
 /home/tarcisio/zephyrproject/zephyr/drivers/serial/Kconfig.mcux
-/home/tarcisio/zephyrproject/zephyr/drivers/serial/Kconfig.mcux_lpc_usart
+/home/tarcisio/zephyrproject/zephyr/drivers/serial/Kconfig.mcux_flexcomm
 /home/tarcisio/zephyrproject/zephyr/drivers/serial/Kconfig.mcux_lpsci
 /home/tarcisio/zephyrproject/zephyr/drivers/serial/Kconfig.mcux_lpuart
 /home/tarcisio/zephyrproject/zephyr/drivers/serial/Kconfig.miv
@@ -324,6 +326,7 @@
 /home/tarcisio/zephyrproject/zephyr/drivers/spi/Kconfig.dw
 /home/tarcisio/zephyrproject/zephyr/drivers/spi/Kconfig.litex
 /home/tarcisio/zephyrproject/zephyr/drivers/spi/Kconfig.mcux_dspi
+/home/tarcisio/zephyrproject/zephyr/drivers/spi/Kconfig.mcux_flexcomm
 /home/tarcisio/zephyrproject/zephyr/drivers/spi/Kconfig.mcux_lpspi
 /home/tarcisio/zephyrproject/zephyr/drivers/spi/Kconfig.nrfx
 /home/tarcisio/zephyrproject/zephyr/drivers/spi/Kconfig.oc_simple
